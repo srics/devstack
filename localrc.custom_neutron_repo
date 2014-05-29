@@ -1,0 +1,25 @@
+
+DATABASE_PASSWORD=nova
+RABBIT_PASSWORD=nova
+SERVICE_TOKEN=nova
+SERVICE_PASSWORD=nova
+ADMIN_PASSWORD=nova
+
+disable_service n-net
+enable_service q-svc
+enable_service q-agt
+enable_service q-l3
+enable_service q-dhcp
+enable_service neutron
+enable_service q-fwaas
+enable_service q-vpn
+
+NEUTRON_REPO=https://github.com/srramasw/neutron.git
+
+OFFLINE=False
+RECLONE=yes
+
+VERBOSE=True
+DEBUG=True
+LOGFILE=/opt/stack/logs/stack.sh.log
+SCREEN_LOGDIR=/opt/stack/logs

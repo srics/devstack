@@ -16,6 +16,8 @@ enable_service q-vpn
 
 NEUTRON_REPO=https://github.com/srramasw/neutron.git
 
+ML2_L3_PLUGIN=neutron.services.csr_router.l3_router_plugin.L3RouterPlugin
+
 OFFLINE=False
 RECLONE=yes
 
